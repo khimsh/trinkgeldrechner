@@ -1,0 +1,24 @@
+h1 {
+    font-weight: 400;
+    text-align: center;
+}
+
+h3 {
+    font-weight: 700;
+}
+
+input[type="text"] {
+    &::placeholder {
+        font-style: italic;
+        color: $color-text-dark;
+    }
+}
+
+button {
+    font-weight: 400;
+}
+
+.tip-amount,
+.total-amount {
+    font-weight: 400;
+}

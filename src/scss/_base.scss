@@ -1,0 +1,21 @@
+*,
+*::before,
+*::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: inherit;
+    font-family: inherit;
+}
+
+html,
+body {
+    min-height: 100vh;
+    height: auto;
+}
+
+body {
+    position: relative;
+    box-sizing: border-box;
+    font-family: 'Source Sans Pro', sans-serif;
+    background: #f6f3fc;
+}

@@ -1,0 +1,30 @@
+body {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+main {
+  flex-direction: column;
+}
+
+.form {
+  width: 95vw;
+
+  @media only screen and (min-width: 580px) {
+    width: 420px;
+  }
+}
+
+.field {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  align-items: center;
+}
+
+.tip-amount,
+.total-amount {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+}

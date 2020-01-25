@@ -1,0 +1,41 @@
+.flex-center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.padding-y {
+  padding: 20px 0;
+}
+
+.padding-xy {
+  padding: 20px;
+}
+
+.margin-b {
+  margin-bottom: 20px;
+}
+
+.text-md {
+  font-size: 14px;
+
+  @media only screen and (min-width: 580px) {
+    font-size: 16px;
+  }
+}
+
+.text-lg {
+  font-size: 18px;
+
+  @media only screen and (min-width: 580px) {
+    font-size: 24px;
+  }
+}
+
+.text-light {
+  color: $color-text-light;
+}
+
+.text-dark {
+  color: $color-text-dark;
+}

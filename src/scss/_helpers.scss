@@ -1,0 +1,27 @@
+.formatted {
+  position: relative;
+
+  &::after {
+    content: '€';
+    position: absolute;
+    top: 50%;
+    right: 10px;
+    transform: translateY(-50%);
+    color: $color-main;
+    font-weight: 400;
+    font-size: 22px;
+  }
+}
+
+.btn-wrap {
+  padding: 0 20px 20px 20px;
+}
+
+
+.tip-amount,
+.total-amount {
+  width: 100%;
+  height: 40px;
+  background-color: #e6dbff;
+  padding-right: 25px;
+}
