@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="de">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <meta name="description" content="Einfache Web-App, um zu berechnen, wie viel Trinkgeld Sie geben sollten.">
+
+  <title>Trinkgeldrechner</title>
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="css/main.min.css">
+  <!-- JS -->
+  <script src="js/script.min.js" async defer></script>
+</head>
+
+<body>
+  <header class="padding-y">
+    <h1 class="text-lg text-light">Trinkgeldrechner</h1>
+  </header>
+
+  <div class="figure">
+  </div>
+
+  <main class="flex-center">
+    <form id="calculator">
+      <section class="padding-xy">
+        <div class="field margin-b">
+          <label for="bill" class="text-md text-dark">Rechnung</label>
+          <div class="formatted">
+            <input type="text" class="text-md text-dark" name="bill" id="bill" placeholder="z.B. 25.90"
+              pattern="[0-9]+([\.,][0-9]+)?" step="0.01" required>
+          </div>
+        </div>
+        <div class="field">
+          <label for="service">Bedienung</label>
+          <select name="service" id="service" class="text-md text-dark">
+            <option value="10">Normal (10%)</option>
+            <option value="5">Unterdurchschnittlich (5%)</option>
+            <option value="15">Super (15%)</option>
+          </select>
+        </div>
+      </section>
+
+      <hr class="divider">
+
+      <section class="padding-xy">
+        <div class="field margin-b">
+          <h3 class="text-md text-dark">Trinkgeld</h3>
+          <div class="tip-amount text-lg text-dark formatted">0.00</div>
+        </div>
+        <div class="field">
+          <h3 class="text-md text-dark">Total</h3>
+          <div class="total-amount text-lg text-dark formatted">0.00</div>
+        </div>
+      </section>
+
+      <div class="btn-wrap">
+        <button type="submit" class="text-lg text-light">Berechnen</button>
+      </div>
+    </form>
+  </main>
+
+  <footer class="flex-center padding-y">
+    <span class="text-md text-dark">&copy; iaKhimsh &ndash; 2020</span>
+  </footer>
+</body>
+
+</html>
